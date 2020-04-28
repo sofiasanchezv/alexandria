@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.despegar</groupId>
-    <artifactId>spring-workshop</artifactId>
+    <artifactId>alexandria</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>spring-workshop</name>
-    <description>Spring Boot Workshop</description>
+    <name>alexandria</name>
+    <description>Movie API</description>
 
     <properties>
         <java.version>11</java.version>
