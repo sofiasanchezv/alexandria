@@ -1,4 +1,4 @@
-package com.despegar.springworkshop.controller;
+package com.despegar.springworkshop.service;
 
 import com.despegar.springworkshop.model.Movie;
 import com.google.common.collect.Lists;
