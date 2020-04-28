@@ -1,8 +1,16 @@
 package com.despegar.alexandria.config;
 
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.PropertySource;
+import org.springframework.context.annotation.PropertySources;
 import org.springframework.stereotype.Component;
 
 @Component
+@PropertySources({
+        @PropertySource("classpath:endpoints.properties"),
+        @PropertySource("classpath:security.properties")
+})
+@ConfigurationProperties(prefix = "tmdb")
 public class TMDBConfig {
     private String host;
     private Integer timeout;
