@@ -1,4 +1,4 @@
-package com.despegar.springworkshop.model;
+package com.despegar.alexandria.model;
 
 import java.time.LocalDate;
 import java.util.List;

@@ -1,6 +1,6 @@
-package com.despegar.springworkshop.model.list;
+package com.despegar.alexandria.model.list;
 
-import com.despegar.springworkshop.model.Movie;
+import com.despegar.alexandria.model.Movie;
 
 import java.time.LocalDate;
 

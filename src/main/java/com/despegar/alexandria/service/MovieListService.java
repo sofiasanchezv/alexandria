@@ -1,7 +1,7 @@
-package com.despegar.springworkshop.service;
+package com.despegar.alexandria.service;
 
-import com.despegar.springworkshop.model.list.MovieList;
-import com.despegar.springworkshop.model.list.MovieListInfo;
+import com.despegar.alexandria.model.list.MovieList;
+import com.despegar.alexandria.model.list.MovieListInfo;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

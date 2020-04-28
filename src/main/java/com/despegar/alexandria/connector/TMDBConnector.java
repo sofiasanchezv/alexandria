@@ -1,4 +1,4 @@
-package com.despegar.springworkshop.connector;
+package com.despegar.alexandria.connector;
 
 import org.springframework.web.client.RestTemplate;
 

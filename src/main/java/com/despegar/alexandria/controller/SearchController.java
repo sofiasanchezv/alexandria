@@ -1,7 +1,7 @@
-package com.despegar.springworkshop.controller;
+package com.despegar.alexandria.controller;
 
-import com.despegar.springworkshop.model.Movie;
-import com.despegar.springworkshop.service.SearchService;
+import com.despegar.alexandria.model.Movie;
+import com.despegar.alexandria.service.SearchService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;

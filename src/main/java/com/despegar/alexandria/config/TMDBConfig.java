@@ -1,4 +1,4 @@
-package com.despegar.springworkshop.config;
+package com.despegar.alexandria.config;
 
 import org.springframework.stereotype.Component;
 

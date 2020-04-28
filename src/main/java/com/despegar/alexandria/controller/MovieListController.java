@@ -1,8 +1,8 @@
-package com.despegar.springworkshop.controller;
+package com.despegar.alexandria.controller;
 
-import com.despegar.springworkshop.model.list.MovieList;
-import com.despegar.springworkshop.model.list.MovieListInfo;
-import com.despegar.springworkshop.service.MovieListService;
+import com.despegar.alexandria.model.list.MovieList;
+import com.despegar.alexandria.model.list.MovieListInfo;
+import com.despegar.alexandria.service.MovieListService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;

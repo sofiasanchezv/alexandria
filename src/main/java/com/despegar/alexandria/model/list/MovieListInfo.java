@@ -1,4 +1,4 @@
-package com.despegar.springworkshop.model.list;
+package com.despegar.alexandria.model.list;
 
 public class MovieListInfo {
     private String name;

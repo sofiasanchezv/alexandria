@@ -1,6 +1,6 @@
-package com.despegar.springworkshop.connector;
+package com.despegar.alexandria.connector;
 
-import com.despegar.springworkshop.connector.exception.TMDBGenericErrorException;
+import com.despegar.alexandria.connector.exception.TMDBGenericErrorException;
 import org.springframework.http.client.ClientHttpResponse;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.ResponseErrorHandler;

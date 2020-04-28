@@ -1,4 +1,4 @@
-package com.despegar.springworkshop.connector.exception;
+package com.despegar.alexandria.connector.exception;
 
 public class TMDBGenericErrorException extends APIException {
     public TMDBGenericErrorException(Integer code) {

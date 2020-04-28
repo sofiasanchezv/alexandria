@@ -1,6 +1,6 @@
-package com.despegar.springworkshop.connector;
+package com.despegar.alexandria.connector;
 
-import com.despegar.springworkshop.config.TMDBConfig;
+import com.despegar.alexandria.config.TMDBConfig;
 import org.apache.http.client.config.RequestConfig;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;

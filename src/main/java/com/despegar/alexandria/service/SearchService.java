@@ -1,6 +1,6 @@
-package com.despegar.springworkshop.service;
+package com.despegar.alexandria.service;
 
-import com.despegar.springworkshop.model.Movie;
+import com.despegar.alexandria.model.Movie;
 import com.google.common.collect.Lists;
 import org.springframework.stereotype.Service;
 
