@@ -3,13 +3,13 @@ package com.despegar.alexandria.connector.dto;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class SimilarMovieDTO {
+public class MovieSearchDTO {
     private Integer id;
     private String title;
     private String releaseDate;
 
     @JsonCreator
-    public SimilarMovieDTO(
+    public MovieSearchDTO(
             @JsonProperty("id") Integer id,
             @JsonProperty("title") String title,
             @JsonProperty("release_date") String releaseDate) {

@@ -5,13 +5,20 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 
-public class SimilarMovieResultsDTO {
-    List<MovieSearchDTO> results;
+public class MovieSearchResultsDTO {
+    private Integer page;
+    private List<MovieSearchDTO> results;
 
     @JsonCreator
-    public SimilarMovieResultsDTO(
+    public MovieSearchResultsDTO(
+            @JsonProperty("page") Integer page,
             @JsonProperty("results") List<MovieSearchDTO> results) {
+        this.page = page;
         this.results = results;
+    }
+
+    public Integer getPage() {
+        return page;
     }
 
     public List<MovieSearchDTO> getResults() {
