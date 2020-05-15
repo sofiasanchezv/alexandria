@@ -1,12 +1,9 @@
-package com.despegar.alexandria.connector;
+package com.despegar.alexandria.connector.tmdb;
 
 import com.despegar.alexandria.config.TMDBConfig;
-import com.despegar.alexandria.connector.dto.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
-
-import java.net.URI;
 
 @Component
 public class TMDBConnector {

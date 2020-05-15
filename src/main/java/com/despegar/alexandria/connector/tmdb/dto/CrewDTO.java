@@ -1,23 +1,23 @@
-package com.despegar.alexandria.connector.dto;
+package com.despegar.alexandria.connector.tmdb.dto;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class CastDTO {
+public class CrewDTO {
     private Integer id;
     private String name;
-    private String character;
+    private String job;
     private String profilePath;
 
     @JsonCreator
-    public CastDTO(
+    public CrewDTO(
             @JsonProperty("id") Integer id,
             @JsonProperty("name") String name,
-            @JsonProperty("character") String character,
+            @JsonProperty("job") String job,
             @JsonProperty("profile_path") String profilePath) {
         this.id = id;
         this.name = name;
-        this.character = character;
+        this.job = job;
         this.profilePath = profilePath;
     }
 
@@ -29,8 +29,8 @@ public class CastDTO {
         return name;
     }
 
-    public String getCharacter() {
-        return character;
+    public String getJob() {
+        return job;
     }
 
     public String getProfilePath() {

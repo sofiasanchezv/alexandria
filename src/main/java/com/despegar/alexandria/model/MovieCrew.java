@@ -1,16 +1,16 @@
-package com.despegar.alexandria.connector.dto;
+package com.despegar.alexandria.model;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class CrewDTO {
+public class MovieCrew {
     private Integer id;
     private String name;
     private String job;
     private String profilePath;
 
     @JsonCreator
-    public CrewDTO(
+    public MovieCrew(
             @JsonProperty("id") Integer id,
             @JsonProperty("name") String name,
             @JsonProperty("job") String job,

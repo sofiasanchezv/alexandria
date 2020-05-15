@@ -1,4 +1,4 @@
-package com.despegar.alexandria.connector;
+package com.despegar.alexandria.connector.tmdb;
 
 import com.despegar.alexandria.config.TMDBConfig;
 import org.apache.http.client.config.RequestConfig;

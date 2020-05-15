@@ -1,16 +1,16 @@
-package com.despegar.alexandria.model;
+package com.despegar.alexandria.connector.tmdb.dto;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class MovieCast {
+public class CastDTO {
     private Integer id;
     private String name;
     private String character;
     private String profilePath;
 
     @JsonCreator
-    public MovieCast(
+    public CastDTO(
             @JsonProperty("id") Integer id,
             @JsonProperty("name") String name,
             @JsonProperty("character") String character,

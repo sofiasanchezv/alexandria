@@ -21,6 +21,6 @@ public class MovieController {
 
     @GetMapping(value = "/movies/{id}")
     public Movie getMovie(@PathVariable final String id){
-        return movieService.get(id).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
+        return movieService.get(id).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Movie not found!"));
     }
 }

@@ -1,6 +1,6 @@
-package com.despegar.alexandria.connector;
+package com.despegar.alexandria.connector.tmdb;
 
-import com.despegar.alexandria.connector.exception.*;
+import com.despegar.alexandria.connector.tmdb.exception.*;
 import org.springframework.http.client.ClientHttpResponse;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.ResponseErrorHandler;

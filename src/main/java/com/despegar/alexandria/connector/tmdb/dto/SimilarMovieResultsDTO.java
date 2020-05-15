@@ -1,4 +1,4 @@
-package com.despegar.alexandria.connector.dto;
+package com.despegar.alexandria.connector.tmdb.dto;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
