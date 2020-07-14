@@ -9,6 +9,6 @@ import java.util.List;
 @Service
 public class SearchService {
     public List<Movie> search(String query, Integer page){
-        return Lists.newArrayList(new Movie());
+        return Lists.newArrayList();
     }
 }

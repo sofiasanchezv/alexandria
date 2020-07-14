@@ -1,9 +1,12 @@
 package com.despegar.alexandria.connector.tmdb;
 
 import com.despegar.alexandria.config.TMDBConfig;
+import com.despegar.alexandria.connector.tmdb.dto.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
+
+import java.util.Optional;
 
 @Component
 public class TMDBConnector {
@@ -21,24 +24,24 @@ public class TMDBConnector {
         this.token = config.getToken();
     }
 
-    public MovieDetailDTO getMovie(String id){
-        return client.getForObject(MOVIE_PATH, MovieDetailDTO.class, id, token);
+    public Optional<MovieDetailDTO> getMovie(String id){
+        return Optional.ofNullable(client.getForObject(MOVIE_PATH, MovieDetailDTO.class, id, token));
     }
 
-    public ReviewResultsDTO getReviews(String id){
-        return client.getForObject(REVIEWS_PATH, ReviewResultsDTO.class, id, token);
+    public Optional<ReviewResultsDTO> getReviews(String id){
+        return Optional.ofNullable(client.getForObject(REVIEWS_PATH, ReviewResultsDTO.class, id, token));
     }
 
-    public SimilarMovieResultsDTO getSimilarMovies(String id){
-        return client.getForObject(SIMILAR_MOVIES_PATH, SimilarMovieResultsDTO.class, id, token);
+    public Optional<SimilarMovieResultsDTO> getSimilarMovies(String id){
+        return Optional.ofNullable(client.getForObject(SIMILAR_MOVIES_PATH, SimilarMovieResultsDTO.class, id, token));
     }
 
-    public MovieCreditsDTO getCastAndCrew(String id){
-        return client.getForObject(CREDITS_PATH, MovieCreditsDTO.class, id, token);
+    public Optional<MovieCreditsDTO> getCastAndCrew(String id){
+        return Optional.ofNullable(client.getForObject(CREDITS_PATH, MovieCreditsDTO.class, id, token));
     }
 
-    public MovieSearchResultsDTO searchMovie(String query, Integer page){
-        return client.getForObject(MOVIE_SEARCH_URL, MovieSearchResultsDTO.class, query, page, token);
+    public Optional<MovieSearchResultsDTO> searchMovie(String query, Integer page){
+        return Optional.ofNullable(client.getForObject(MOVIE_SEARCH_URL, MovieSearchResultsDTO.class, query, page, token));
     }
 
 }
